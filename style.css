@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.imc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+h3 {
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    line-height: 1.5;
+}
+
+p {
+    font-family: "Source sans 3", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.imc-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.7;
+}
+
+.imc-dados form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imc-dados input {
+    height: 25px;
+    border-radius: 5px;
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #4d4d4d;
+}
+
+form button:hover {
+    background-color: #0071bc;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #4d4d4d;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0071bc;
+}
+
+.imc img {
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+
+.resultado-imc {
+    text-align: center;
+    line-height: 1.5em;
+    font-family: "Source sans 3", Arial, Helvetica, sans-serif;
+}
+
+/* Media query para telas com largura menor que 600px */
+@media (max-width: 600px) {
+    .imc {
+        flex-direction: column;
+    }
+
+    .imc-dados {
+        width: 70%;  /* Reduz a largura do campo de entrada para 80% da largura da janela de visualização */
+    }
+}
