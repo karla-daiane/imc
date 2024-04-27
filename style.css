@@ -23,21 +23,18 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     line-height: 0.7;
 }
 
 .imc-dados form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flexbox;
 }
 
 .imc-dados input {
     height: 25px;
     border-radius: 5px;
-    width: 400px;
+    width: auto;
     border: 1px solid rgba(0, 0, 0, 0.30);
 }
 
@@ -69,8 +66,15 @@ form button:hover {
 }
 
 .imc img {
-    max-width: 400px;
+    width: 80%;
     border-radius: 50px;
+}
+
+.img-imc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -80,13 +84,13 @@ form button:hover {
     font-family: "Source sans 3", Arial, Helvetica, sans-serif;
 }
 
-/* Media query para telas com largura menor que 600px */
-@media (max-width: 600px) {
+/* Media query para telas com largura menor que 764px */
+@media (max-width: 764px) {
     .imc {
         flex-direction: column;
     }
 
     .imc-dados {
-        width: 70%;  /* Reduz a largura do campo de entrada para 80% da largura da janela de visualização */
+        width: 70%;  /* Reduz a largura do campo de entrada para 70% da largura da janela de visualização */
     }
 }
